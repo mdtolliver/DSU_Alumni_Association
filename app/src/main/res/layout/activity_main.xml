@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#fff"
+android:orientation="vertical"
+tools:context="com.example.dsuappacademy.dsualumniassociation.MainActivity">
+
+
+<ImageView
+    android:id="@+id/hornet_picture"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:scaleType="center"
+    android:src="@drawable/dsu_hornet" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:paddingTop="16dp"
+    android:text="WE NEED YOUR SUPPORT"
+    android:textColor="#000"
+    android:textSize="22sp" />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/donate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:onClick="donateMoney"
+        android:text="DONATE"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:onClick="contactUs"
+        android:text="CONTACT US"
+        android:textColor="#fff"
+        android:layout_toRightOf="@id/donate"
+        android:layout_marginLeft="16dp" />
+
+</RelativeLayout>
+
+
+</LinearLayout>
